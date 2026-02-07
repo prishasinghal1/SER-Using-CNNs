@@ -24,7 +24,7 @@ MODEL:
 • The model is a 2D CNN with three convolutional blocks (32, 64, and 128 filters) followed by batch normalization, max pooling, and dropout. Global average pooling and a dense layer precede a softmax output for 8 emotion classes. Training was performed using the Adam optimizer (learning rate 0.001) and sparse categorical cross-entropy loss.
 • Used 30 epochs with an early stop if needed, and a batch size of 32.
 • Experimented a lot with the dropout rates for each layer, number of epochs, and batch sizes. Also with the learning rate of the Adam optimizer. 
-• I was trying another model with a learning rate of 0.0005 that seemed to be performing better but stopped mid-way because I exceeded the Colab limit. I think that would have been my best performing model going by however much it ran, but as I said, only a very few epochs ran so I can't show the results for that yet.
+• I was trying another model with a learning rate of 0.0005 that seemed to be performing better but stopped mid-way because I exceeded the Colab limit. I think that would have been my best performing model since the validation loss and accuracy jumping around on the results I've submitted showed me I needed to lower the learning rate. As far as I could see on the epochs that ran, it was performing better with a lower learning rate.
 
 Evaluation and confusion matrix:
 • Macro F1-score: 0.35305887392101576
