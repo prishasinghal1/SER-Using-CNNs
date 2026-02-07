@@ -1,0 +1,4 @@
+To download the dataset via Kaggle in my Colab notebook, I uploaded Kaggle API credentials (kaggle.json), and the downloaded the dataset using the Kaggle API.
+So setup instructions for the Colab notebook to run include: 
+- Get Kaggle API credentials from kaggle.com/settings
+- Replace 'Enter your username' and 'Enter your API Key' in Cell 2
